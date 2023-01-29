@@ -6,6 +6,13 @@
 
 
 {% block content %}
+
+<form  method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit">
+</form>
+
   <div class="mycard">
     <h1>Members</h1>
     <ul>
